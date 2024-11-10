@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Tạo nền đen với độ trong suốt */
+        .bg-black-transparent {
+            background-color: rgba(225, 225, 225, 0.742); /* 0.5 là độ trong suốt 50% */
+        }
+    </style>
+</head>
+<body class="bg-black-transparent">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="bg-gray-800 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <!-- Logo hoặc Tên Thương Hiệu -->
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+        
+                <!-- Các liên kết điều hướng -->
+                <ul class="flex space-x-6 text-white font-semibold">
+                    <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-200">About</a></li>
+                    <li><a href="discography.html" class="hover:text-gray-200">Discography</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                </ul>
+
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="p-2 pl-10 pr-4 rounded-lg bg-white text-gray-800 focus:outline-none">
+                    <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">🔍</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>
+    
+    <section class="container mx-auto mt-10 p-6">
+        <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">DANH SÁCH ALBUM</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <!-- Feature 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Full album</h3>
+                <ul class="list-none text-gray-600 space-y-2">
+                    <li class="pl-2">DARK & WILD - BTS</li>       
+                    <li class="pl-2">WINGS - BTS</li>                    
+                    <li class="pl-2">LOVE YOURSELF 轉 'TEAR' - BTS</li>
+                    <li class="pl-2">MAP OF THE SOUL : 7 - BTS</li>
+                    <li class="pl-2">BE - BTS</li>
+                    <li class="pl-2">INDIGO - RM</li>
+                    <li class="pl-2">D-DAY - SUGA</li>
+                    <li class="pl-2">GOLDEN - JUNGKOOK</li>
+                    <li class="pl-2">THE DREAM CHAPTER: MAGIC - TXT</li>
+                    <li class="pl-2">THE CHAOS CHAPTER: FREEZE - TXT</li>
+                    <li class="pl-2">THE NAME CHAPTER: FREEFALL - TXT</li>
+                </ul>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Mini album</h3>
+                <ul class="list-none text-gray-600 space-y-2">
+                    <li class="pl-2">O!RUL8,2? - BTS</li>
+                    <li class="pl-2">SKOOL LUV AFFAIR - BTS</li>
+                    <li class="pl-2">THE MOST BEAUTIFUL MOMENT IN LIFE PT.1 - BTS</li>
+                    <li class="pl-2">THE MOST BEAUTIFUL MOMENT IN LIFE PT.2 - BTS</li>
+                    <li class="pl-2">LOVE YOURSELF承 'HER' - BTS</li>
+                    <li class="pl-2">MAP OF THE SOUL: PERSONA - BTS</li>
+                    <li class="pl-2">FACE - JIMIN</li>
+                    <li class="pl-2">THE DREAM CHAPTER: STAR - TXT</li>
+                    <li class="pl-2">THE DREAM CHAPTER: ETERNITY - TXT</li>
+                    <li class="pl-2">MINISODE1: BLUE HOUR - TXT</li>
+                    <li class="pl-2">Minisode2: Thursday's Child - TXT</li>
+                    <li class="pl-2">THE NAME CHAPTER: TEMPTATION - TXT</li>
+                    <li class="pl-2">Minisode3: TOMORROW - TXT</li>
+            </ul>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Special album</h3>
+                <ul class="list-none text-gray-600 space-y-2">
+                    <li class="pl-2">THE MOST BEAUTIFUL MOMENT IN LIFE : YOUNG FOREVER - BTS</li>
+                    <li class="pl-2">YOU NEVER WALK ALONE - BTS</li>
+                    <li class="pl-2">LOVE YOURSELF結 'ANSWER' - BTS</li>
+                    <li class="pl-2">PROOF - BTS</li>
+                    <li class="pl-2">THE CHAOS CHAPTER: FIGHT OR ESCAPE - TXT</li>
+                </ul>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                <h3 class="text-xl font-semibold mb-4">Single album/Digitla single</h3>
+                <ul class="list-none text-gray-600 space-y-2">
+                    <li class="pl-2">2 COOL 4 SKOOL - BTS</li>
+                    <li class="pl-2">DYNAMITE - BTS</li>
+                    <li class="pl-2">BUTTER - BTS</li>
+                    <li class="pl-2">Take Two - BTS</li>
+                    <li class="pl-2">THE ASTRONAUT - JIN</li>
+                    <li class="pl-2">JACK IN THE BOX - J-HOPE</li>
+                    <li class="pl-2">LAYOVER - V</li>
+                    <li class="pl-2">FRI(END)S - V</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 Product Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

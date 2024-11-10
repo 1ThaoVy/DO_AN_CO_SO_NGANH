@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Tạo nền đen với độ trong suốt */
+        .bg-black-transparent {
+            background-color: rgba(225, 225, 225, 0.742); /* 0.5 là độ trong suốt 50% */
+        }
+    </style>
+</head>
+<body class="bg-black-transparent h-screen flex flex-col">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md">
+        <nav class="bg-gray-800 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <!-- Logo hoặc Tên Thương Hiệu -->
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+        
+                <!-- Các liên kết điều hướng -->
+                <ul class="flex space-x-6 text-white font-semibold">
+                    <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-200">About</a></li>
+                    <li><a href="discography.html" class="hover:text-gray-200">Discography</a></li>
+                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                </ul>
+
+                <div class="relative">
+                    <input type="text" placeholder="Search..." class="p-2 pl-10 pr-4 rounded-lg bg-white text-gray-800 focus:outline-none">
+                    <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">🔍</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>
+
+    <!-- Product Introduction Section -->
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex-1">
+        <div class="flex flex-col md:flex-row items-center">
+            <!-- Product Image -->
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <img src="..." alt="ảnh chưa có" class="rounded-lg">
+            </div>
+            <!-- Product Details -->
+            <div class="w-full md:w-1/2 md:pl-10">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Album</h2>
+                <p class="text-gray-600 mb-4">
+                    Chính là một bộ sưu tập đoạn nhạc hay ca khúc được lưu hành trên cộng đồng thị trường. Cách phổ biến nhất là qua việc phát hành album bằng cách bán chúng ở trên mạng. Ngoài các ca khúc, album còn chứa hình ảnh mà ca sĩ thể hiện ca khúc đó.
+                Một album có thể được phát hành trong một định dạng như trên đĩa hoặc trong nhiều định dạng, từ vật chất như CD, DVD nhạc, cassette và đĩa nhựa vinyl, tới kỹ thuật số như các file MP3 và nhạc trực tuyến.
+                </p>
+                <div class="mb-6">
+                    <p class="text-gray-600 mb-4">
+                        Ở BigHit Music, có bốn dạng album mà công ty đã phát hành:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li class="pl-2">Full album</li>
+                        <li class="pl-2">Mini album</li>
+                        <li class="pl-2">Special album</li>
+                        <li class="pl-2">Single album/Digitla single</li>
+                    </ul>
+                </div>                              
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 Product Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
