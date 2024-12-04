@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ĐỒ ÁN</title>
-    <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <style>
-        /* Tạo nền đen với độ trong suốt */
         .bg-black-transparent {
             background-color: rgba(225, 225, 225, 0.742); /* 0.5 là độ trong suốt 50% */
         }
@@ -15,21 +13,19 @@
 </head>
 <body class="bg-black-transparent">
     <!-- Header Section -->
-    <header class="bg-white shadow-md">
-        <nav class="bg-gray-800 p-4">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-200 p-4">
             <div class="container mx-auto flex items-center justify-between">
-                <!-- Logo hoặc Tên Thương Hiệu -->
                 <div class="flex items-center space-x-2">
                     <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
-                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                    <span class="text-blackfont-bold text-lg">BIGHIT MUSIC</span>
                 </div>
         
-                <!-- Các liên kết điều hướng -->
-                <ul class="flex space-x-6 text-white font-semibold">
+                <ul class="flex space-x-6 text-black font-semibold">
                     <li><a href="index.html" class="hover:text-gray-200">Home</a></li>
                     <li><a href="about.html" class="hover:text-gray-200">About</a></li>
                     <li><a href="discography.html" class="hover:text-gray-200">Discography</a></li>
-                    <li><a href="#contact" class="hover:text-gray-200">Contact</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-200">Contact</a></li>
                 </ul>
 
                 <div class="relative">
@@ -41,95 +37,330 @@
     </header>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-11/12 max-w-5xl mx-auto justify-items-center mt-8">
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/TT.png" alt="Take two" class="object-cover w-full h-full">
-        </div>
         <div class="bg-gray-700 flex items-center justify-center relative inline-block">
             <a href="proof.html">
                 <img src="image/PROOF.png" alt="Proof" class="object-cover w-full h-full">
-                <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
-                    PROOF
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Special album</span>
+                    <span class="text-center">PROOF</span>
+                </div>                                
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="butter.html">
+                <img src="image/BUTTER.jpg" alt="Butter" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">BUTTER</span>
                 </div>
             </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/BUTTER.jpg" alt="Butter" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/BE.jpg" alt="BE" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">BE</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/BE.jpg" alt="BE" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="dynamite.html">
+                <img src="image/DYNAMITE.jpg" alt="Dynamite" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/DYNAMITE.jpg" alt="Dynamite" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="7.html">
+                <img src="image/7.jpg" alt="Map of the Soul 7" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">MAP OF THE SOUL : 7</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/7.jpg" alt="Map of the Soul 7" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="mots.html">
+                <img src="image/MOTS.jpg" alt="Persona" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">MAP OF THE SOUL: PERSONA</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/MOTS.jpg" alt="Persona" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="answer.html"> 
+                <img src="image/LYA.jpg" alt="LY 轉" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Special album</span>
+                    <span class="text-center">LOVE YOURSELF結 'ANSWER'</span>
+                </div>
+            </a>
+        </div><div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="tear.html">
+                <img src="image/LYT.jpg" alt="LY 結" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">LOVE YOURSELF 轉 'TEAR'</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/LYT.jpg" alt="LY 結" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="her.html">
+                <img src="image/LYH.jpg" alt="LY 承" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">LOVE YOURSELF承 'HER'</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/LYA.jpg" alt="LY 轉" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="ynwa.html">
+                <img src="image/YNWA.jpg" alt="You Never Walk Alone" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Special album</span>
+                    <span class="text-center">YOU NEVER WALK ALONE</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/LYH.jpg" alt="LY 承" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="wings.html">
+                <img src="image/WINGS.jpg" alt="Wings" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">WINGS</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/YNWA.jpg" alt="You Never Walk Alone" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="yf.html">
+                <img src="image/YF.jpg" alt="Young forever" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Special album</span>
+                    <span class="text-center">THE MOST BEAUTIFUL MOMENT IN LIFE YOUNG FOREVER</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/WINGS.jpg" alt="Wings" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="pt2.html">
+                <img src="image/HYYH2.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.2" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">THE MOST BEAUTIFUL MOMENT IN LIFE PT.2</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/YF.jpg" alt="Young forever" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="pt1.html">
+                <img src="image/HYYH1.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.1" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">THE MOST BEAUTIFUL MOMENT IN LIFE PT.1</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/HYYH2.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.2" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="dw.html">
+                <img src="image/DW.jpg" alt="DARK & WILD" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">DARK & WILD</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/HYYH1.jpg" alt="THE MOST BEAUTIFUL MOMENT IN LIFE PT.1" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="sla.html">
+                <img src="image/SLA.jpg" alt="SKOOL LUV AFFAIR" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">SKOOL LUV AFFAIR</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/DW.jpg" alt="DARK & WILD" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="O.html"> 
+                <img src="image/ORUL.jpg" alt="O!RUL8,2?" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">O!RUL8,2?</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/SLA.jpg" alt="SKOOL LUV AFFAIR" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="2c4s.html"> 
+                <img src="image/2C4S.jpg" alt="2 cool 4 skool" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Single album</span>
+                    <span class="text-center">2 COOL 4 SKOOL</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/ORUL.jpg" alt="O!RUL8,2?" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="indigo.html">
+                <img src="image/I.jpg" alt="Indigo" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">INDIGO</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/2C4S.jpg" alt="2 cool 4 skool" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="ta.html"> 
+                <img src="image/TA.png" alt="The Astronaut" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Single album</span>
+                    <span class="text-center">THE ASTRONAUT</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/I.jpg" alt="Indigo" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="dd.html"> 
+                <img src="image/DD.png" alt="D-Day" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">D-DAY</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/TA.png" alt="The Astronaut" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="jitb.html">
+                <img src="image/JITB.jpg" alt="Jack In The Box" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">JACK IN THE BOX</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/DD.png" alt="D-Day" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="face.html">
+                <img src="image/F.png" alt="Face" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Mini album</span>
+                    <span class="text-center">FACE</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/JITB.jpg" alt="Jack In The Box" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="layover.html">
+                <img src="image/L.png" alt="Layover" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">LAYOVER</span>
+                </div>
+            </a>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/F.png" alt="Face" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="golden.html">
+                <img src="image/G.jpeg" alt="Golden" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">GOLDEN</span>
+                </div>
+            </a>    
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/L.png" alt="Layover" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html"></a><img src="image/TSCS.jpg" alt="The Star Chapter: SANCTUARY" class="object-cover w-full h-full">
+            <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <span class="text-center">Digitla single</span>
+                <span class="text-center">DYNAMITE</span>
+            </div>
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/FV.jpg" alt="Fri(end)s" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/M3T.jpg" alt="Minisode3: TOMORROW" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>    
         </div>
-        <div class="bg-gray-700 flex items-center justify-center">
-            <img src="image/G.jpeg" alt="Golden" class="object-cover w-full h-full">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/TNCF.png" alt="THE NAME CHAPTER: FREEFALL" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/TNCT.jpg" alt="THE NAME CHAPTER: TEMPTATION" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/M2TC.png" alt="Minisode2: Thursday's Child" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a> 
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/TCCF.jpg" alt="THE CHAOS CHAPTER: FIGHT OR ESCAPE" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html"> 
+                <img src="image/TCC.jpg" alt="THE CHAOS CHAPTER: FREEZE" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html"> 
+                <img src="image/M1B.jpg" alt="MINISODE1: BLUE HOUR" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html"> 
+                <img src="image/TDE.jpg" alt="THE DREAM CHAPTER: ETERNITY" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html"> 
+                <img src="image/TDM.jpg" alt="THE DREAM CHAPTER: MAGIC" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="be.html">
+                <img src="image/TDS.jpg" alt="THE DREAM CHAPTER: STAR" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Digitla single</span>
+                    <span class="text-center">DYNAMITE</span>
+                </div>
+            </a>
         </div>
     </div>
-    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
-        <p>© 2024 Product Company. All rights reserved.</p>
+    <footer class="bg-gray-200 text-black mt-10 p-6 text-center">
+        <p>© 2024 BigHit Music. All rights reserved.</p>
     </footer>
 </body>
 </html>

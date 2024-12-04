@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-yellow {
+            background-color: #FFDF00;
+        }        
+    </style>
+</head>
+<body class="bg-yellow">
+    <!-- Header Section -->
+    <header class="bg-transparent shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-800 bg-opacity-50 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <!-- Logo hoặc Tên Thương Hiệu -->
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>       
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>
+<!-- Product Introduction Section -->
+    <section class="container mx-auto mt-10 p-6 bg-transparent">
+        <div class="flex flex-col items-center text-center">
+            <!-- Product Image -->
+            <div class="w-full md:w-1/2 mb-6">
+                <img src="image/bt.jpg" alt="BUTTER" class="rounded-lg mx-auto">
+            </div>
+            <!-- Product Details -->
+            <div class="w-full md:w-1/2">
+                <h5 class="text-sm font-bold text-black mb-4">DIGITLA SINGLE</h5>
+                <h2 class="text-2xl font-bold text-black mb-4">BUTTER</h2>
+                <p class="text-black mb-4">
+                    Bài hát mùa hè mới nhất của BTS, Butter được phát hành vào ngày 21 tháng 5, là một ca khúc dance pop dễ dàng trở thành giai điệu gây nghiện cho người nghe, với đường bass đặc trưng và âm thanh synth sắc nét.
+                </p>
+                <p class="text-black mb-4">
+                    Butter thể hiện sức hút độc đáo của BTS mà không ai có thể làm giống được. Đôi khi mượt mà, lúc lại đầy cuốn hút, sự đối lập trong phong cách của BTS sẽ làm tan chảy trái tim người nghe. Lời bài hát vui nhộn và dí dỏm, tràn đầy năng lượng tích cực và tươi sáng sẽ ngay lập tức nâng cao tinh thần.
+                </p>                  
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6 bg-yellow-100 shadow-lg">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hình ảnh chi tiết về album</h2>
+            <div class="flex space-x-6 justify-center">
+                <div class="w-1/3">
+                    <img src="image/b.jpg" alt="BUTTER" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-1/3">
+                    <img src="image/b1.jpg" alt="BUTTER" class="w-full h-auto object-cover">
+                </div>
+            </div>        
+        </div>
+    </section>     
+
+    <section class="w-full mt-10 p-6">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-white mb-6">VIDEO</h2>
+            <iframe class ="w-3/5 h-80 md:h-96 rounded-lg" 
+                    src="https://www.youtube.com/embed/dnpC9YaosIY?si=sXCL4ptSkNhbQl5W&amp;start=19" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 Product Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

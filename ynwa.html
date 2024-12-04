@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-pink {
+            background-color: #75c1b9; 
+        }
+    </style>
+</head>
+<body class="bg-pink">
+    <header class="bg-transparent shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-800 bg-opacity-50 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>       
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <section class="container mx-auto mt-10 p-6 bg-transparent">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <img src="image/YNWA.jpg" alt="YNWA" class="rounded-lg w-1/2 mx-auto">
+            </div>
+            
+            <div class="w-full md:w-1/2 md:pl-10">
+                <h5 class="text-sm font-bold text-black mb-4">SPECIAL ALBUM</h5>
+                <h2 class="text-2xl font-bold text-black mb-4">YOU NEVER WALK ALONE</h2>
+                <p class="text-black mb-4">
+                    BTS, phát hành 'YOU NEVER WALK ALONE' ngày 13 tháng 2 năm 2017. <br> 
+                    You Never Walk Alone là phần tiếp theo của Wings   
+                    “Chỉ cần chúng ta bên nhau, chúng ta có thể cười lên”.  
+                    Lời nhắn gửi 'an ủi' và 'hy vọng' dành cho thế hệ trẻ của thời đại này.
+                </p>
+                <p class="text-black mb-4">
+                   'You Never Walk Alone' là album mà BTS hoàn thiện câu chuyện về tuổi trẻ và sự trưởng thành mà họ chưa thể truyền tải trong 'WINGS'.  
+                    Trong khi series 'The Most Beautiful In Life' và 'WINGS' kể về câu chuyện tuổi trẻ và sự trưởng thành, 'You Never Walk Alone' là lời nhắn gửi ấm áp về sự an ủi và hy vọng dành cho những thanh niên đang đau khổ trong thời đại này.
+                </p>       
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mt-10 p-6 bg-pink-50">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Hình ảnh chi tiết về album</h2>
+            <div class="flex space-x-6 justify-center w-full">
+                <div class="w-1/4 md:w-1/5">
+                    <img src="image/ynwa1.jpg" alt="BE" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-1/4 md:w-1/5">
+                    <img src="image/ynwa2.jpg" alt="BE" class="w-full h-auto object-cover">
+                </div>
+            </div>        
+        </div>
+    </section>           
+
+    <section class="w-full mt-10 p-6">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">VIDEO</h2>
+            <div class="w-full max-w-screen-lg">
+                <iframe class ="w-full h-80 md:h-96 rounded-lg" src="https://www.youtube.com/embed/fqTJxSn5lts?si=u20Ilct0QCtmm05e" 
+                    title="YouTube video player" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 Product Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>

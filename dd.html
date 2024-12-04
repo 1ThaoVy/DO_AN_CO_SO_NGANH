@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-yellow {
+            background-color: #5b5b5b;
+        }        
+    </style>
+</head>
+<body class="bg-yellow">
+    <header class="bg-transparent shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-800 bg-opacity-50 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>       
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <section class="container mx-auto mt-10 p-6 bg-transparent">
+        <div class="flex flex-col items-center text-center">
+            <div class="w-full md:w-1/2 mb-6">
+                <img src="image/DD.png" class="rounded-lg w-1/2 mx-auto">
+            </div>
+            <div class="w-full md:w-1/2">
+                <h2 class="text-2xl font-bold text-white mb-4">D-DAY</h2>
+                <p class="text-white mb-4">
+                    BTS SUGA đã phát hành album solo chính thức đầu tiên mang tên D-DAY dưới biệt danh Agust D vào ngày 21 tháng 4.
+                </p>
+                <p class="text-white mb-4">
+                    D-DAY bao gồm tổng cộng 10 bài hát, trong đó có ca khúc chủ đề "Haegeum" và ca khúc đã phát hành trước "People Pt.2 (feat. IU)". Album này là kết thúc của bộ ba Agust D sau hai mixtape trước đó là Agust D (2016) và D-2 (2020).
+                </p>                 
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mt-10 p-6" style="background-color: #94a6ab">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Hình ảnh chi tiết về album</h2>
+            <div class="flex space-x-6 justify-center">
+                <div class="w-1/3">
+                    <img src="image/dd.jpg" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-1/3">
+                    <img src="image/dd1.jpg" class="w-full h-auto object-cover">
+                </div>
+            </div>    
+        </div>
+    </section>  
+
+    <section class="w-full mt-10 p-6">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-white mb-6">VIDEO</h2>
+            <div class="flex justify-center items-center">
+                <video class="w-full max-w-4xl" controls>
+                  <source src="video/suga.mp4" type="video/mp4">
+                  Trình duyệt của bạn không hỗ trợ thẻ video.
+                </video>
+              </div>              
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 Product Company. All rights reserved.</p>
+    </footer>
+</body>
+</html>
