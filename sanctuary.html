@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-silver {
+            background-color: #99cfff;
+        }
+    </style>
+</head>
+<body class="bg-silver">
+    <header class="bg-transparent shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-800 bg-opacity-50 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>       
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <section class="container mx-auto mt-10 p-6 shadow-lg" style="background-color: #5687b2;">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <img src="image/TSCS.jpg" class="rounded-lg w-1/2 mx-auto">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10">
+                <h5 class="text-sm font-bold text-white mb-4">7TH MINI ALBUM</h5>
+                <h2 class="text-2xl font-bold text-white mb-4">The Star Chapter: SANCTUARY</h2>
+                <p class="text-white text-justify mb-4">
+                    TOMORROW X TOGETHER ra mắt mini album thứ bảy mang tên The Star Chapter: SANCTUARY vào ngày 4 tháng 11.
+                </p>
+                <p class="text-white text-justify mb-4">
+                    The Star Chapter: SANCTUARY là một bức tranh cảm xúc, nơi trái tim và tâm hồn giao thoa khi hai người gặp lại nhau dưới bầu trời đầy sao. Đó là câu chuyện về những khoảnh khắc tuyệt đẹp bên nhau về người đã biến mọi trải nghiệm trở nên kỳ diệu và cũng là người khiến đối phương quyết định ngừng trốn chạy để đối mặt với thực tại.
+                </p>       
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6" style="background-color: #b5dcfd;">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-white mb-6">Hình ảnh chi tiết về album</h2>
+            <div class="flex space-x-6 justify-center">
+                <div class="w-1/3">
+                    <img src="image/tscs1.jpg" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-1/3">
+                    <img src="image/tscs2.jpg" class="w-full h-auto object-cover">
+                </div>
+            </div>        
+        </div>
+    </section>   
+    
+    <section class="container mx-auto mt-10 p-6">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-white mb-6">VIDEO</h2>
+            <iframe class ="w-3/5 h-80 md:h-96 rounded-lg" src="https://www.youtube.com/embed/oxGHJSbOY3k?si=LkDkQZ2PXq_tlrZQ&amp" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 BigHit Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>

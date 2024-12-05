@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-black-transparent {
+            background-color: rgba(225, 225, 225, 0.742);
+        }
+        nav .relative {
+          flex-shrink: 0;
+        }
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+        .carousel-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .prev, .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 24px;
+            padding: 10px;
+            color: white;
+            background-color: rgba(0,0,0,0.5);
+            cursor: pointer;
+            z-index: 10;
+        }
+        .prev { left: 10px; }
+        .next { right: 10px; }    
+    </style>
+</head>
+<body class="bg-black-transparent">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="p-4 bg-gray-200">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-black font-bold text-lg hidden lg:block">BIGHIT MUSIC</span>
+                </div>
+
+                <button id="hamburger" class="text-white block lg:hidden focus:outline-none">
+                  <span class="w-6 h-0.5 bg-white block mb-1"></span>
+                  <span class="w-6 h-0.5 bg-white block mb-1"></span>
+                  <span class="w-6 h-0.5 bg-white block mb-1"></span>
+                </button>
+                
+                <ul id="nav-links" class="hidden lg:flex space-x-6 text-black font-semibold">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+                    <li><a href="discography.html" class="hover:text-gray-400">Discography</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+                </ul>
+                
+                <div class="relative">
+                  <input type="text" placeholder="Search..." class="p-2 pl-10 pr-4 rounded-lg bg-white text-gray-800 focus:outline-none">
+                  <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">🔍</span>
+              </div>
+            </div>
+        </nav>                  
+    </header>
+    
+    <script>
+      // JavaScript để bật/tắt thanh điều hướng khi nhấn nút hamburger
+      document.getElementById('hamburger').addEventListener('click', function() {
+        const navLinks = document.getElementById('nav-links');
+        navLinks.classList.toggle('hidden'); // Hiển thị/ẩn menu
+    });
+    </script>
+
+    <div class="full pt-0" id="main-content">
+      <div id="home-top" class="bg-color-white full">
+        <div class="home-slide slick-single full">
+          <div class="relative">
+            <a class="block w-full h-full back-img-contain" href="" style="background-image: url(image/banner.jpeg);">
+              <img src="image/banner.jpeg" alt="banner" class="w-full">
+            </a>
+            <div class="absolute bottom-0 left-0 w-full px-6 py-3 shadow-lg text-base" style="background-color: rgba(70, 66, 66, 0.9); color: white; display: flex; align-items: center;">
+              <svg class="h-8 w-8 text-gray-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                <path stroke="none" d="M0 0h24v24H0z"/>  
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />  
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />  
+                <circle cx="11" cy="16" r="1" />  
+                <polyline points="12 16 12 11 14 12" />
+              </svg>
+              BTS (방탄소년단) Special album 'PROOF'
+            </div>
+          </div>
+          <div class="relative">
+            <a class="block w-full h-full back-img-contain" href="" style="background-image: url(image/banner1.jpeg);">
+              <img src="image/banner1.jpeg" alt="banner" class="w-full">
+            </a>
+            <div class="absolute bottom-0 left-0 w-full px-6 py-3 shadow-lg text-base" style="background-color: rgba(70, 66, 66, 0.9); color: white; display: flex; align-items: center;">
+              <svg class="h-8 w-8 text-gray-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                <path stroke="none" d="M0 0h24v24H0z"/>  
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />  
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />  
+                <circle cx="11" cy="16" r="1" />  
+                <polyline points="12 16 12 11 14 12" />
+              </svg>
+              JUNGKOOK (정국) Full album 'GOLDEN'
+            </div>
+          </div>
+          <div class="relative">
+            <a class="block w-full h-full back-img-contain" href="#" style="background-image: url(image/banner2.jpg);">
+                <img src="image/banner2.jpeg" alt="banner" class="w-full">
+            </a>
+            <div class="absolute bottom-0 left-0 w-full px-6 py-3 shadow-lg text-base" style="background-color: rgba(70, 66, 66, 0.9); color: white; display: flex; align-items: center;">
+              <svg class="h-8 w-8 text-gray-100"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                <path stroke="none" d="M0 0h24v24H0z"/>  
+                <path d="M14 3v4a1 1 0 0 0 1 1h4" />  
+                <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />  
+                <circle cx="11" cy="16" r="1" />  
+                <polyline points="12 16 12 11 14 12" />
+              </svg>
+              TOMORROW X TOGETHER (투모로우바이투게더) 7th Mini album 'The Star Chapter: SANCTUARY'
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+      <script>
+        $(document).ready(function() {
+          $('.home-slide').slick({
+            dots: true,           // Hiển thị các chấm điều hướng
+            arrows: true,         // Sử dụng các nút điều hướng mặc định
+            speed: 500,           // Thời gian chuyển tiếp
+            fade: false,          // Chuyển tiếp mờ
+            cssEase: 'linear',    // Hiệu ứng chuyển tiếp
+          });
+        });
+      </script>
+    </div>
+   
+    <section class="w-full mt-10 p-6 bg-white">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="image/br.png" class="rounded-lg w-80 h-80 object-cover">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">Album</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                    Chính là một bộ sưu tập đoạn nhạc hay ca khúc được lưu hành trên cộng đồng thị trường. Cách phổ biến nhất là qua việc phát hành album bằng cách bán chúng ở trên mạng. Ngoài các ca khúc, album còn chứa hình ảnh mà ca sĩ thể hiện ca khúc đó.
+                    Một album có thể được phát hành trong một định dạng như trên đĩa hoặc trong nhiều định dạng như CD, DVD nhạc, cassette và đĩa nhựa vinyl, tới kỹ thuật số như các file MP3 và nhạc trực tuyến.
+                </p>
+                <div class="mb-6">
+                    <p class="text-gray-600 mb-4">
+                        Ở BigHit Music, có bốn dạng album mà công ty đã phát hành:
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 space-y-2">
+                        <li class="pl-2">Full album</li>
+                        <li class="pl-2">Mini album</li>
+                        <li class="pl-2">Special album</li>
+                        <li class="pl-2">Single album/Digital single</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <div class="relative w-full overflow-hidden bg-gray-500 p-4 rounded-lg shadow-lg mt-10">
+      <div id="slider" class="flex gap-4 transition-transform duration-500 ease-in-out">
+        
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/lyst.jpg" alt="Image 1" class="w-full h-full object-cover rounded-lg">
+        </div>
+    
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/7.jpg" alt="Image 2" class="w-full h-full object-cover rounded-lg">
+        </div>
+        
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/lysh.jpg" alt="Image 3" class="w-full h-full object-cover rounded-lg">
+        </div>
+        
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/mots.jpg" alt="Image 4" class="w-full h-full object-cover rounded-lg">
+        </div>
+  
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/jin.png" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/jm.png" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/jh.png" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/txt1.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/txt2.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/txt3.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+
+        <div class="flex-shrink-0 w-64 h-64 bg-white rounded-lg shadow-lg">
+          <img src="images/txt4.jpg" alt="Image 5" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+  
+      <button id="prev" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70">
+        &#10094;
+      </button>
+      <button id="next" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70">
+        &#10095;
+      </button>
+    </div>
+  
+    <script>
+      let currentIndex = 0;
+      const slider = document.getElementById("slider");
+      const slides = slider.children;
+      const slideWidth = slides[0].offsetWidth; // Lấy chiều rộng của một slide
+      const sliderContainer = slider.parentElement;
+      const totalSlides = slides.length;
+      // Hàm tính toán số slide hiển thị dựa trên kích thước vùng chứa
+      function getVisibleSlides() {
+          return Math.floor(sliderContainer.offsetWidth / slideWidth);
+      }
+      function updateSlider() {
+          const visibleSlides = getVisibleSlides();
+          const maxIndex = totalSlides - visibleSlides; // Giới hạn currentIndex
+          currentIndex = Math.min(currentIndex, maxIndex); // Đảm bảo không vượt quá maxIndex
+          slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+      }
+      document.getElementById("prev").addEventListener("click", () => {
+          if (currentIndex > 0) {
+              currentIndex--;
+              updateSlider();
+          }
+      });
+      document.getElementById("next").addEventListener("click", () => {
+          const visibleSlides = getVisibleSlides();
+          const maxIndex = totalSlides - visibleSlides; // Giới hạn currentIndex
+          if (currentIndex < maxIndex) {
+              currentIndex++;
+              updateSlider();
+          }
+      });
+      // Cập nhật vị trí slider khi tải trang hoặc thay đổi kích thước cửa sổ
+      window.addEventListener("resize", updateSlider);
+      window.addEventListener("DOMContentLoaded", updateSlider);
+    </script>    
+    
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-blue-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/proof.png" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-purple-400 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">PROOF</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  Album Proof của BTS phát hành ngày 10/6, là tuyển tập gồm 48 bài hát trải dài qua hành trình âm nhạc của nhóm. Album có 3 đĩa CD, mỗi đĩa chứa một ca khúc mới: "Yet To Come", "Run BTS", và "For Youth". CD1 tập hợp các đĩa đơn chủ đề theo thứ tự thời gian, CD2 là các bài solo/nhóm nhỏ do thành viên chọn, và CD3 dành riêng cho ARMY với các bài hát chưa phát hành, bản demo và ca khúc fan song. Proof thể hiện sự tri ân và kết nối giữa BTS với người hâm mộ.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-pink-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">MAP OF THE SOUL: 7</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  BTS phát hành album phòng thu thứ 4 “MAP OF THE SOUL: 7” vào ngày 21/2, tiếp nối câu chuyện trong series *MAP OF THE SOUL. Album khám phá hành trình 7 năm của BTS, từ những khó khăn đến việc chấp nhận cả “ánh sáng” và “bóng tối” trong con người thật của mình. Với các dự án nghệ thuật như "CONNECT, BTS" và phim nghệ thuật "Black Swan", nhóm tiếp tục thể hiện sự trưởng thành trong âm nhạc và nghệ thuật, kể câu chuyện chân thật về hành trình tìm kiếm bản ngã trọn vẹn.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/7.jpg" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-blue-300 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-blue-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">  
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/lysh.jpg" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-purple-400 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">LOVE YOURSELF 承 'HER'</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  BTS phát hành album LOVE YOURSELF 承 'HER' vào ngày 18 tháng 9, là phần đầu tiên trong series LOVE YOURSELF. Album thể hiện những cảm xúc lo lắng và vui vẻ của tình yêu, kể về hành trình trưởng thành và lần đầu biết yêu của các chàng trai, đồng thời truyền tải thông điệp hòa bình và đoàn kết cho xã hội.
+                </p>
+            </div> 
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-pink-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">      
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Star Chapter: SANCTUARY</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  TOMORROW X TOGETHER sẽ trở lại ngày 4/11 với mini album thứ bảy The Star Chapter: SANCTUARY, kể câu chuyện về tình yêu qua những khoảnh khắc đẹp đẽ từ lần gặp gỡ đầu tiên, sự mong chờ tương lai đến tình yêu sâu sắc và quyết tâm trân trọng người đặc biệt. Album khám phá tình yêu dưới nhiều góc độ qua các ca khúc đầy cảm xúc.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/tscs.png" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-blue-300 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-blue-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">        
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/tnct.png" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-purple-400 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Name Chapter: TEMPTATION</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  TOMORROW X TOGETHER trở lại với EP thứ năm The Name Chapter: TEMPTATION, kể về tuổi trẻ đứng trước ngưỡng cửa trưởng thành, đầy xung đột và mong muốn trì hoãn sự trưởng thành để giữ lại tự do. Album gồm 5 ca khúc, trong đó có đĩa đơn chủ đề "Sugar Rush Ride" và các bài hát khác khám phá cảm xúc và sự trưởng thành của thế hệ trẻ trong thế giới hiện đại.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg flex items-center justify-center hover:bg-pink-100 hover:shadow-2xl transition-all duration-300 ease-in-out">
+        <div class="flex flex-col md:flex-row items-center justify-center w-full">  
+            <div class="w-full md:w-1/2 md:pl-10 text-center md:text-left">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4">The Name Chapter: TEMPTATION</h2>
+                <p class="text-justify text-gray-600 mb-4">
+                  TOMORROW X TOGETHER sẽ phát hành mini album thứ ba “minisode1 : Blue Hour” vào ngày 26 tháng 10. Sau thành công với “The Dream Chapter: ETERNITY”, nhóm tiếp tục khẳng định sự trưởng thành và tài năng khi phá vỡ kỷ lục doanh số. Album mới sẽ mang đến câu chuyện về sự ngây thơ đặc trưng của TOMORROW X TOGETHER trong bối cảnh đại dịch COVID-19.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center">
+                <img src="images/m1.jpg" class="border-4 shadow-lg w-80 h-80 object-cover hover:border-blue-300 hover:scale-110 transition-all duration-300 ease-in-out">
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-200 text-black mt-10 p-6 text-center">
+        <p>© 2024 BigHit Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>

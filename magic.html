@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-silver {
+            background-color: #3dd694;
+        }
+    </style>
+</head>
+<body class="bg-silver">
+    <header class="bg-transparent shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-800 bg-opacity-50 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-white font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>                  
+    </header>       
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>
+
+    <section class="container mx-auto mt-10 p-6 bg-transparent">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="w-full md:w-1/2 mb-6 md:mb-0">
+                <img src="image/TDM.jpg" class="rounded-lg shadow-lg w-1/2 mx-auto">
+            </div>
+            <div class="w-full md:w-1/2 md:pl-10">
+                <h5 class="text-sm font-bold text-black mb-4">1ST FULL ALBUM</h5>
+                <h2 class="text-2xl font-bold text-black mb-4">THE DREAM CHAPTER: MAGIC</h2>
+                <p class="text-black text-justify font-bold mb-4">
+                    TOMORROW X TOGETHER phát hành album phòng thu đầu tiên The Dream Chapter: MAGIC vào ngày 21 tháng 10 năm 2019.
+                </p>
+                <p class="text-black text-justify mb-4">
+                    The Dream Chapter: MAGIC kể câu chuyện về “những cuộc phiêu lưu kỳ diệu” mà các chàng trai trải qua cùng những người bạn vừa khác biệt, vừa giống mình. Thông qua hành trình này, các chàng trai chia sẻ sự biến đổi, bối rối và những cảm xúc bùng nổ xuất hiện khi họ bước vào tuổi thanh xuân.
+                </p>       
+                <p class="text-black text-justify mb-4">
+                    Album bao gồm 8 ca khúc: “New Rules” nói về khát vọng tạo ra những quy tắc riêng của thế giới, ca khúc chủ đề “9 and Three Quarters (Run Away)”, “Roller Coaster” tái hiện khoảnh khắc vừa sợ hãi vừa phấn khích như chuyến tàu lượn siêu tốc và “Angel Or Devil” miêu tả cuộc đấu tranh bất tận giữa hai tiếng nói nội tâm.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full mt-10 p-6" style="background-color: #fad900;">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-black mb-6">Hình ảnh chi tiết về album</h2>
+            <div class="flex space-x-6 justify-center">
+                <div class="w-1/3">
+                    <img src="image/tdcm1.jpg" class="w-full h-auto object-cover">
+                </div>
+                <div class="w-1/3">
+                    <img src="image/tdcm2.jpg" class="w-full h-auto object-cover">
+                </div>
+            </div>        
+        </div>
+    </section>   
+    
+    <section class="container mx-auto mt-10 p-6">
+        <div class="flex flex-col items-center">
+            <h2 class="text-2xl font-bold text-black mb-6">VIDEO</h2>
+            <iframe class ="w-3/5 h-80 md:h-96 rounded-lg" src="https://www.youtube.com/embed/UdtLBpFJE5c?si=zuO6FOjFuyqxVyEq" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white mt-10 p-6 text-center">
+        <p>© 2024 BigHit Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>
