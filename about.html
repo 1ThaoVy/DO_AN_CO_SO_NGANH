@@ -20,17 +20,46 @@
                     <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
                     <span class="text-black font-bold text-lg">BIGHIT MUSIC</span>
                 </div>
-                <ul id="nav-links" class="hidden lg:flex space-x-6 text-black font-semibold">
-                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
-                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
-                    <li><a href="discography.html" class="hover:text-gray-400">Discography</a></li>
-                    <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+    
+                <ul class="flex space-x-8 text-black font-semibold justify-center flex-grow">
+                    <li><a href="index.html" class="hover:text-gray-400">TRANG CHỦ</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">PHÂN LOẠI</a></li>
+                    <li><a href="discography.html" class="hover:text-gray-400">DANH SÁCH ALBUM</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-400">LIÊN HỆ</a></li>
                 </ul>
 
-                <div class="relative">
-                    <input type="text" placeholder="Search..." class="p-2 pl-10 pr-4 rounded-lg bg-white text-gray-800 focus:outline-none">
-                    <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">🔍</span>
+                <div class="flex items-center gap-2 ml-auto">
+                    <div class="flex flex-col items-start">
+                        <select id="singer" class="border border-gray-300 rounded-md text-sm px-4 py-2 w-[18rem] focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <option value="">--Loại album--</option>
+                            <option value="full.html">Full album BTS</option>
+                            <option value="minibts.html">Mini album BTS</option>
+                            <option value="specialbts.html">Special album BTS</option>
+                            <option value="dsabts.html">Digital/Single BTS</option>
+                            <option value="fulltxt.html">Full album TXT</option>
+                            <option value="minitxt.html">Mini album TXT</option>
+                            <option value="fight.html">Special album TXT</option>
+                        </select>
+                    </div>
+                  
+                <div class="flex items-center justify-center">
+                    <button onclick="navigate()" class="bg-pink-500 text-white font-medium text-sm py-1 px-4 rounded-md hover:bg-pink-600 transition duration-300">
+                        Tìm kiếm
+                    </button>
                 </div>
+                
+                <script>
+                    function navigate() {
+                        const selectElement = document.getElementById('singer');
+                        const selectedValue = selectElement.value;
+                    
+                        if (selectedValue) {
+                        window.location.href = selectedValue;
+                        } else {
+                        alert('Vui lòng chọn loại album.');
+                        }
+                    }
+                </script>    
             </div>
         </nav>                  
     </header>
@@ -42,34 +71,42 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                    
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/dw.jpg" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 1st Album [Dark & Wild]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$45.01</p>
-                        </div>
+                        <a href="dw1.html">
+                            <img src="images/dw.jpg" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 1st Album [Dark & Wild]</h3>
+                                <p class="mt-2 text-sm text-gray-700">340.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
             
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/w.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 2nd Album [WINGS]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$15.82</p>
-                        </div>
+                        <a href="wings1.html">
+                            <img src="images/w.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 2nd Album [WINGS]</h3>
+                                <p class="mt-2 text-sm text-gray-700">435.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
             
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/lyst.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 3rd Album [LOVE YOURSELF 轉 'Tear']</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="tear1.html">
+                            <img src="images/lyst.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 3rd Album [LOVE YOURSELF 轉 'Tear']</h3>
+                                <p class="mt-2 text-sm text-gray-700">450.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/7.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 4th Album [Map Of The Soul : 7]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="mots7.html">
+                            <img src="images/7.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 4th Album [Map Of The Soul : 7]</h3>
+                                <p class="mt-2 text-sm text-gray-700">450.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="mt-6 text-right">
@@ -86,34 +123,42 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                  
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/O.jpg" alt="Proof Standard Edition" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS 1st Mini Album [O!RUL8,2?]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$45.01</p>
-                    </div>
+                        <a href="O1.html">
+                            <img src="images/O.jpg" alt="Proof Standard Edition" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 1st Mini Album [O!RUL8,2?]</h3>
+                                <p class="mt-2 text-sm text-gray-700">320.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
  
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/sla.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS 2nd Mini Album [Skool Luv Affair]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$15.82</p>
-                    </div>
+                        <a href="sla1.html">
+                            <img src="images/sla.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 2nd Mini Album [Skool Luv Affair]</h3>
+                                <p class="mt-2 text-sm text-gray-700">310.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
    
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/pt1.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 3rd Mini Album [The Most Beautiful Moment in Life PT.1]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="PT11.html">
+                            <img src="images/pt1.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 3rd Mini Album [The Most Beautiful Moment in Life PT.1]</h3>
+                                <p class="mt-2 text-sm text-gray-700">380.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/pt2.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS 4th Mini Album [The Most Beautiful Moment in Life PT.2]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="PT21.html">
+                            <img src="images/pt2.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS 4th Mini Album [The Most Beautiful Moment in Life PT.2]</h3>
+                                <p class="mt-2 text-sm text-gray-700">380.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="mt-6 text-right">
@@ -130,34 +175,42 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
                
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/yf.jpg" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS [The Most Beautiful Moment in Life: Young Forever]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$45.01</p>
-                    </div>
+                        <a href="yf1.html">
+                            <img src="images/yf.jpg" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS [The Most Beautiful Moment in Life: Young Forever]</h3>
+                                <p class="mt-2 text-sm text-gray-700">520.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
             
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/ynwa.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS [YOU NEVER WALK ALONE]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$15.82</p>
-                    </div>
+                        <a href="ynwa1.html">
+                            <img src="images/ynwa.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS [YOU NEVER WALK ALONE]</h3>
+                                <p class="mt-2 text-sm text-gray-700">430.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
  
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/answer.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS [LOVE YOURSELF 結 ‘Answer’]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="answer1.html">
+                            <img src="images/answer.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS [LOVE YOURSELF 結 ‘Answer’]</h3>
+                                <p class="mt-2 text-sm text-gray-700">450.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/proof.png" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS [Proof]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="proof1.html">
+                            <img src="images/proof.png" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS [Proof]</h3>
+                                <p class="mt-2 text-sm text-gray-700">720.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="mt-6 text-right">
@@ -174,34 +227,42 @@
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
            
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/2c4s.jpg" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS Single Album [2 COOL 4 SKOOL]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$45.01</p>
-                    </div>
+                        <a href="2c4s1.html">
+                            <img src="images/2c4s.jpg" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS Single Album [2 COOL 4 SKOOL]</h3>
+                                <p class="mt-2 text-sm text-gray-700">340.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
  
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                    <img src="images/dynamite.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
-                    <div class="p-4">
-                        <h3 class="text-lg font-medium text-gray-900">BTS Digitla Single [Dynamite]</h3>
-                        <p class="mt-2 text-sm text-gray-700">$15.82</p>
-                    </div>
+                        <a href="dynamite1.html">
+                            <img src="images/dynamite.jpg" alt="Proof Compact Edition" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS Digitla Single [Dynamite]</h3>
+                                <p class="mt-2 text-sm text-gray-700">180.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
         
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/butter.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">BTS Digitla Single [Butter]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="butter1.html">
+                            <img src="images/butter.jpg" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">BTS Digitla Single [Butter]</h3>
+                                <p class="mt-2 text-sm text-gray-700">460.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="border rounded-lg shadow-sm overflow-hidden">
-                        <img src="images/jin.png" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
-                        <div class="p-4">
-                            <h3 class="text-lg font-medium text-gray-900">Jin (BTS) [The Astronaut]</h3>
-                            <p class="mt-2 text-sm text-gray-700">$80.00</p>
-                        </div>
+                        <a href="jin.html">
+                            <img src="images/jin.png" alt="Heavy Fleece Hoodie" class="w-full h-48 object-cover">
+                            <div class="p-4">
+                                <h3 class="text-lg font-medium text-gray-900">Jin (BTS) [The Astronaut]</h3>
+                                <p class="mt-2 text-sm text-gray-700">440.000 VNĐ</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="mt-6 text-right">

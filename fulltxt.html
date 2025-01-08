@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ĐỒ ÁN</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-black-transparent {
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body class="bg-black-transparent">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="bg-gray-200 p-4">
+            <div class="container mx-auto flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
+                    <span class="text-black font-bold text-lg">BIGHIT MUSIC</span>
+                </div>
+            </div>
+        </nav>              
+    </header>
+
+    <button onclick="window.history.back()" class="mt-4 px-4 py-2 duration-300">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M7.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 111.414 1.414L5.414 9H16a1 1 0 110 2H5.414l2.293 2.293a1 1 0 010 1.414z" clip-rule="evenodd" />
+        </svg>
+    </button>   
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 w-11/12 max-w-5xl mx-auto justify-items-center mt-8">
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="freefall.html">
+                <img src="image/TNCF.png" alt="THE NAME CHAPTER: FREEFALL" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">THE NAME CHAPTER: FREEFALL</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="freeze.html"> 
+                <img src="image/TCC.jpg" alt="THE CHAOS CHAPTER: FREEZE" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">THE CHAOS CHAPTER: FREEZE</span>
+                </div>
+            </a>
+        </div>
+        <div class="bg-gray-700 flex items-center justify-center relative inline-block">
+            <a href="magic.html"> 
+                <img src="image/TDM.jpg" alt="THE DREAM CHAPTER: MAGIC" class="object-cover w-full h-full">
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col items-center justify-center text-white text-lg opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <span class="text-center">Full album</span>
+                    <span class="text-center">THE DREAM CHAPTER: MAGIC</span>
+                </div>
+            </a>
+        </div>
+    </div>
+   
+    
+    <footer class="absolute bottom-0 left-0 w-full bg-gray-200 text-black mt-10 p-6 text-center">
+        <p>© 2024 BigHit Music. All rights reserved.</p>
+    </footer>
+</body>
+</html>

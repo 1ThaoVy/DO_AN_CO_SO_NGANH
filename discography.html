@@ -17,20 +17,48 @@
             <div class="container mx-auto flex items-center justify-between">
                 <div class="flex items-center space-x-2">
                     <img src="image/BH.jpg" alt="LogoBigHit" class="w-10 h-10">
-                    <span class="text-black font-bold text-lg hidden lg:block">BIGHIT MUSIC</span>
+                    <span class="text-black font-bold text-lg">BIGHIT MUSIC</span>
                 </div>
-        
-                <ul class="flex space-x-6 text-black font-semibold">
-                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
-                    <li><a href="about.html" class="hover:text-gray-400">About</a></li>
-                    <li><a href="discography.html" class="hover:text-gray-400">Discography</a></li>
-                    <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+    
+                <ul class="flex space-x-8 text-black font-semibold justify-center flex-grow">
+                    <li><a href="index.html" class="hover:text-gray-400">TRANG CHỦ</a></li>
+                    <li><a href="about.html" class="hover:text-gray-400">PHÂN LOẠI</a></li>
+                    <li><a href="discography.html" class="hover:text-gray-400">DANH SÁCH ALBUM</a></li>
+                    <li><a href="contact.html" class="hover:text-gray-400">LIÊN HỆ</a></li>
                 </ul>
 
-                <div class="relative">
-                    <input type="text" placeholder="Search..." class="p-2 pl-10 pr-4 rounded-lg bg-white text-gray-800 focus:outline-none">
-                    <span class="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">🔍</span>
+                <div class="flex items-center gap-2 ml-auto">
+                    <div class="flex flex-col items-start">
+                        <select id="singer" class="border border-gray-300 rounded-md text-sm px-4 py-2 w-[18rem] focus:outline-none focus:ring-2 focus:ring-pink-400">
+                            <option value="">--Loại album--</option>
+                            <option value="full.html">Full album BTS</option>
+                            <option value="minibts.html">Mini album BTS</option>
+                            <option value="specialbts.html">Special album BTS</option>
+                            <option value="dsabts.html">Digital/Single BTS</option>
+                            <option value="fulltxt.html">Full album TXT</option>
+                            <option value="minitxt.html">Mini album TXT</option>
+                            <option value="fight.html">Special album TXT</option>
+                        </select>
+                    </div>
+                  
+                <div class="flex items-center justify-center">
+                    <button onclick="navigate()" class="bg-pink-500 text-white font-medium text-sm py-1 px-4 rounded-md hover:bg-pink-600 transition duration-300">
+                        Tìm kiếm
+                    </button>
                 </div>
+                
+                <script>
+                    function navigate() {
+                        const selectElement = document.getElementById('singer');
+                        const selectedValue = selectElement.value;
+                    
+                        if (selectedValue) {
+                        window.location.href = selectedValue;
+                        } else {
+                        alert('Vui lòng chọn loại album.');
+                        }
+                    }
+                </script>    
             </div>
         </nav>                  
     </header>
